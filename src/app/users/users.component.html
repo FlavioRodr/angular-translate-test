@@ -1,0 +1,15 @@
+<h1>From Users Lazy loaded Module</h1>
+
+<fieldset>
+    <h2>From Pipe: {{ 'CUSTOMERS' | translate }}</h2>    
+    <h2>From Pipe: {{ 'USERS' | translate }}</h2>
+    <hr>
+    <h2>From Service: {{ customers }}</h2>
+    <h2>From Service: {{ users }}</h2>
+</fieldset>
+
+<br>
+
+<a [routerLink]="['/customers']">Go to Customers</a>
+<br>
+<a [routerLink]="['/']">Go to Home page</a>
